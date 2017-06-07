@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     //对mHttpURLConnection的设置要在这个方法之前
                     mHttpURLConnection.connect();
 
-                    //如果服务前返回成功
+                    //如果服务器返回成功
                     if(mHttpURLConnection.getResponseCode()==HttpURLConnection.HTTP_OK){
                         InputStream inputStream = mHttpURLConnection.getInputStream();
                         //创建字符流（因为接受的是字符，所以用字符流更高效一点）
